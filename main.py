@@ -14,10 +14,9 @@ def create_git_order(time):
 
 def put_file(time):
     """ 在桌面放置文件 """
-    file = open(r"C:\Users\HKplus\Desktop\git_push_time.txt","w") # 此处的路径根据自己实际需求配置
+    file = open(r"./git_push_time.txt","w") # 此处的路径根据自己实际需求配置
     file.write(time + "完成最后一次提交")
 
 if __name__ == "__main__":
     date = get_time() # 获取时间
     create_git_order(date) # 提交到git
-    put_file(date) # 在桌面创建文件
