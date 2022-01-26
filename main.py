@@ -20,3 +20,4 @@ def put_file(time):
 if __name__ == "__main__":
     date = get_time() # 获取时间
     create_git_order(date) # 提交到git
+    put_file(date) # 在桌面创建文件
